@@ -76,3 +76,40 @@ In our source code, we implemented each of these steps using Qiskit’s quantum 
 
 
 Language: Python
+
+## Dependencies
+
+This project requires the following Python libraries:
+
+- qiskit
+- qiskit-aer
+- numpy
+- math
+- fractions
+- pycryptodome
+
+```bash
+pip install qiskit qiskit-aer numpy pycryptodome
+
+## Usage
+1. Run the script on two different terminals 
+
+```bash
+python main.py````
+
+Make sure that one terminal acts as host and another connects as client
+
+2. Input message in client's terminal 
+
+3. Sniff packets from wireshark and get the public key, symmetric key, and the encrypted message
+
+4. Run the shor's algorithm script
+
+```bash
+python shor.py
+```
+
+5. Input the public key, symmetric key, and encrypted message from wireshark
+
+6. Shor's algorithm script should output factors of N, decrypted symmetric key, and final decrypted message
+
