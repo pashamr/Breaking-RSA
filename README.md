@@ -81,12 +81,12 @@ Language: Python
 
 This project requires the following Python libraries:
 
-- qiskit
-- qiskit-aer
-- numpy
-- math
-- fractions
-- pycryptodome
++ qiskit
++ qiskit-aer
++ numpy
++ math
++ fractions
++ pycryptodome
 
 ```bash
 pip install qiskit qiskit-aer numpy pycryptodome
@@ -100,8 +100,8 @@ Open two terminals and execute the following command:
 ```bash
 python main.py
 ```
-    - One terminal should act as host 
-    - The other terminal should act as client
++ One terminal should act as host 
++ The other terminal should act as client
 
 2. **Sending a message**
 
@@ -111,9 +111,9 @@ Enter a message in the client's terminal.
 
 Use Wireshark to sniff network packets. Extract the following information:
 
-    - The public key
-    - The symmetric key
-    - The encrypted message
++ The public key
++ The symmetric key
++ The encrypted message
 
 4. **Run the shor's algorithm script**
 
@@ -127,16 +127,16 @@ python shor.py
 
 When prompted, enter the following details obtained from Wireshark:
 
-    - The public key
-    - The symmetric key
-    - The encrypted message
++ The public key
++ The symmetric key
++ The encrypted message
 
 6. **View the output**
 
 The script will output:
 
-    - The factors of N
-    - The decrypted symmetric key
-    - The final decrypted message
++ The factors of N
++ The decrypted symmetric key
++ The final decrypted message
 
 
