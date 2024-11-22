@@ -13,7 +13,7 @@ Shor’s Algorithm focuses on solving the problem, “Given an odd composite num
     
 3. Let r b the period of modular exponentiation of $a^xmod(N)$
     
-4. With a good approximation of r, the  $gcd(a^\frac{r}{2}- 1, N)$ and $gcd(a^\frac{r}{2}+ 1, N)$ has a good chance of containing $p$ and/or $q$
+4. With a good approximation of $r$, $gcd(a^\frac{r}{2} - 1, N)$ and $gcd(a^\frac{r}{2} + 1, N)$ has a good chance of containing $p$ and/or $q$
   
 
 ### Classical Steps in Shor’s Algorithm
@@ -24,21 +24,21 @@ In selecting a random a, which is a coprime of N, we prepare for the modular ari
 
 ### Quantum Computing in Shor’s Algorithm
 
-In Step 3 of the algorithm, we have to figure out the period of modular exponentiation following axmod(N). This period is the smallest possible r such that, 
+In Step 3 of the algorithm, we have to figure out the period of modular exponentiation following $a^xmod(N)$. This period is the smallest possible r such that, 
 
-$$ar ≡ 1 mod(N)$$
+$$a^r ≡ 1 mod(N)$$
 
 Which can be expanded to,
 
-$$ar - 1 ≡ 0 mod(N)$$
+$$a^r - 1 ≡ 0 mod(N)$$
 
-$$ar - 1 = N$$
+$$a^r - 1 = mN$$
 
-$$N =(a^\frac{r}{2}- 1)(a^\frac{r}{2} + 1)$$
+$$mN =(a^\frac{r}{2}- 1)(a^\frac{r}{2} + 1)$$
 As seen above, if we can figure out $r$, then we can solve for the factors of $N$.
   
 
-To solve this period efficiently, we utilise quantum computing’s property to store the repeating results of $a^xmod(N)$ in a single superposition with phase factors proportional to x, as defined below.
+To solve this period efficiently, we utilise quantum computing’s property to store the repeating results of $a^xmod(N)$ in a single superposition with phase factors proportional to $x$, as defined below.
 
 
 $$
