@@ -93,25 +93,50 @@ pip install qiskit qiskit-aer numpy pycryptodome
 ```
 
 ## Usage
-1. Run the script on two different terminals 
+1. **Run the main script**
+
+Open two terminals and execute the following command:
 
 ```bash
 python main.py
 ```
+    - One terminal should act as host 
+    - The other terminal should act as client
 
-Make sure that one terminal acts as host and another connects as client
+2. **Sending a message**
 
-2. Input message in client's terminal 
+Enter a message in the client's terminal.
 
-3. Sniff packets from wireshark and get the public key, symmetric key, and the encrypted message
+3. **Capturing the data**
 
-4. Run the shor's algorithm script
+Use Wireshark to sniff network packets. Extract the following information:
+
+    - The public key
+    - The symmetric key
+    - The encrypted message
+
+4. **Run the shor's algorithm script**
+
+Execute the Shor's algorithm script by running:
 
 ```bash
 python shor.py
 ```
 
-5. Input the public key, symmetric key, and encrypted message from wireshark
+5. **Provide inputs to the script**
 
-6. Shor's algorithm script should output factors of N, decrypted symmetric key, and final decrypted message
+When prompted, enter the following details obtained from Wireshark:
+
+    - The public key
+    - The symmetric key
+    - The encrypted message
+
+6. **View the output**
+
+The script will output:
+
+    - The factors of N
+    - The decrypted symmetric key
+    - The final decrypted message
+
 
