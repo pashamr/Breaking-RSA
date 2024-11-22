@@ -1,5 +1,5 @@
 # Breaking-RSA
-Simulates a quantum computer using qiskit and implements Shor's Algorithm to try and break RSA Encryption. Although, since, we are only simulating we are limited to a size of bits of RSA we can break.
+Simulates a quantum computer using qiskit and implements Shor's Algorithm to try and break RSA Encryption. Due to the limitations of simulation, the bit size of RSA that can be broken is restricted.
 
 ## Shor’s Algorithm 
 
@@ -89,13 +89,13 @@ This project requires the following Python libraries:
 - pycryptodome
 
 ```bash
-pip install qiskit qiskit-aer numpy pycryptodome
+pip install qiskit qiskit-aer numpy pycryptodome```
 
 ## Usage
 1. Run the script on two different terminals 
 
 ```bash
-python main.py````
+python main.py```
 
 Make sure that one terminal acts as host and another connects as client
 
@@ -106,8 +106,7 @@ Make sure that one terminal acts as host and another connects as client
 4. Run the shor's algorithm script
 
 ```bash
-python shor.py
-```
+python shor.py```
 
 5. Input the public key, symmetric key, and encrypted message from wireshark
 
